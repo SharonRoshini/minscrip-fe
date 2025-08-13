@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import CsvUpload from './CsvUpload';
 import './App.css';
+import JiraAnalyzer from './Jira';
 import axios from 'axios';
 
 function HomePage() {
@@ -110,6 +111,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/upload-csv" element={<CsvUpload />} />
+        <Route path="/jira" element={<JiraAnalyzer />} />
       </Routes>
     </Router>
   );
