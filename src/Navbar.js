@@ -8,6 +8,7 @@ export default function Navbar() {
       <div className="navbar-container">
         <Link className="nav-link" to="/">Home</Link>
         <Link className="nav-link" to="/upload-csv">Don’t Have API?</Link>
+        <Link className="nav-link" to="/jira">Jira</Link>
       </div>
     </nav>
   );

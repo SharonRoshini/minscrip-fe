@@ -21,7 +21,7 @@ export default function CsvUpload() {
     formData.append('file', file);
 
     try {
-      const res = await axios.post('http://localhost:5002/analyze-xlsx', formData);
+      const res = await axios.post('https://min-scrip.vercel.app/analyze-xlsx', formData);
       if (res.data.users) {
         setUsers(res.data.users);
       } else {

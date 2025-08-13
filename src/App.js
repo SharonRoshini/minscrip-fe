@@ -32,7 +32,7 @@ function HomePage() {
     formData.append('admin_email', adminEmail);
 
     try {
-      const res = await axios.post('http://localhost:5002/upload', formData);
+      const res = await axios.post('https://min-scrip.vercel.app/upload', formData);
       if (res.data.results) {
         setResult(res.data.results);
       } else {
